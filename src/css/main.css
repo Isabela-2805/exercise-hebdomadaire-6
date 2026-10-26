@@ -1,0 +1,97 @@
+* {
+  background-color: #eceeef;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.search-info {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 356px 964px;
+  column-gap: 40px;
+  align-items: start;
+  width: 1440px;
+  padding: 80px 40px;
+}
+
+.search-info {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  justify-self: stretch;
+  border-radius: 24px;
+  background-color: #474747;
+}
+
+.search-info > * {
+  background-color: transparent;
+}
+
+.search-info h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.search-info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.search-info strong {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+/* Bouton Reset search : padding 8px 12px */
+.btn-reset {
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 12px;
+  background-color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 32px;
+}
+
+.card-placeholder {
+  width: 300px;
+  height: 468px;
+  border-radius: 24px;
+  box-shadow: 0 8px 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+.btn-more {
+  grid-column: 2;
+  justify-self: center;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+}
